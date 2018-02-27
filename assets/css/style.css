@@ -1,0 +1,75 @@
+/*
+ Css for the bio Area 
+ Donald Blanc
+*/
+
+body{
+    background-image: url(../images/concrete-texture.png);
+}
+
+#entireContentArea{
+    width: 960px;
+    margin:0;
+}
+
+#sideBar{
+float: right;
+background-color: #ffffff;
+margin-top: 20px;
+}
+#mainContent{
+    width: 650px;
+    margin: 0;
+    float:left;
+}
+
+.footer{
+    background-color: #666666;
+    padding: 20px;
+    /* adding the fixed footer */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}
+.navigation ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navigation li {
+    float: right;
+}
+
+.navigation li a {
+    display: block;
+    color: #4aaaa5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.header {
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+.container{
+    width: 1024px;
+    margin:0 auto;
+}
+#bio-image{
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    float: left;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
