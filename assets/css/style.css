@@ -19,21 +19,26 @@ margin-top: 20px;
 }
 #mainContent{
     width: 650px;
-    margin: 0;
+    margin: 30px;
     float:left;
+    background-color: white;
 }
 
 .footer{
     background-color: #666666;
     padding: 20px;
     /* adding the fixed footer */
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    /* position: fixed; */
+    /* left: 0; */
+    /* margin-top: 80%; */
+    /* bottom: 0; */
+    width: 1024px; 
     text-align: center;
+    position: absolute;
+    bottom: 0px;
 
 }
+
 .navigation ul
 {
     list-style-type: none;
@@ -53,14 +58,17 @@ margin-top: 20px;
     text-decoration: none;
 }
 .header {
+    position: relative;
     border-bottom: 2px solid;
     border-top: 2px solid;
     background-color: #ffffff;
     border-color: #cccccc;
+    height: 104px;
 }
 .container{
     width: 1024px;
     margin:0 auto;
+
 }
 #bio-image{
     width: 200px;
@@ -72,4 +80,24 @@ margin-top: 20px;
     content: "";
     display: block;
     clear: both;
+  }
+
+  #name {
+    position: relative;
+    background-color:#4aaaa5;
+    color: white;
+    width:190px;
+    height:62px;
+    text-align: center;
+    float: left;
+    margin-top:42px; 
+    margin-left: 3%;
+  }
+
+  #name h3 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100%;
+    transform: translate(-50%, -50%);
   }
