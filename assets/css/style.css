@@ -3,8 +3,21 @@
  Donald Blanc
 */
 
+
+h1, h2 {
+    color: #4aaaa5;
+    font-size: 20px;
+    padding-bottom: 13px;
+    font-weight: bold;
+    margin-top: 23px;
+    margin-left: 32px;
+}
+
 body{
     background-image: url(../images/concrete-texture.png);
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    font-size: 15px;
 }
 
 #entireContentArea{
@@ -16,12 +29,18 @@ body{
 float: right;
 background-color: #ffffff;
 margin-top: 20px;
+width: 270px;
+border: 1px solid #dddddd;
+height: auto;
 }
-#mainContent{
+
+.mainContent{
     width: 650px;
     margin: 30px;
     float:left;
     background-color: white;
+    margin: 20px 0px 10px 0px;
+    border: 1px solid #dddddd;
 }
 
 .footer{
@@ -54,7 +73,7 @@ margin-top: 20px;
     display: block;
     color: #4aaaa5;
     text-align: center;
-    padding: 14px 16px;
+    padding: 51px 16px;
     text-decoration: none;
 }
 .header {
@@ -64,6 +83,7 @@ margin-top: 20px;
     background-color: #ffffff;
     border-color: #cccccc;
     height: 104px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 .container{
     width: 1024px;
@@ -75,6 +95,7 @@ margin-top: 20px;
     height: 200px;
     margin-right: 20px;
     float: left;
+    margin-left: 34px;
 }
 .clearfix::after {
     content: "";
@@ -101,3 +122,23 @@ margin-top: 20px;
       width: 100%;
     transform: translate(-50%, -50%);
   }
+
+ hr {
+    margin: 0px 33px 10px 31px;
+    
+}
+.icons {
+    width: 22%;
+    height: auto;
+    padding: 0.6%;
+}
+.stackIcon{
+    width: 20%;
+    height: auto;
+    padding: 1.2%;
+}
+
+.mainContent p {
+    margin-right: 49px;
+    margin-left: 37px;
+}
