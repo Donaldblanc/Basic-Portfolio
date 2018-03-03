@@ -80,9 +80,19 @@ img.icons:hover {
     display: block;
     color: #4aaaa5;
     text-align: center;
-    padding: 51px 16px;
+    padding: 45px 16px;
     text-decoration: none;
 }
+.navigation li a.active {
+    background-color: #4aaaa5;
+    color: white;
+}
+
+.navigation li a:hover:not(.active) {
+    background-color: #cccccc;
+    color: white;
+}
+
 .header {
     position: relative;
     border-bottom: 2px solid;
