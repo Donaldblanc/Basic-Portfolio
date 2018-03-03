@@ -28,7 +28,7 @@ body{
 float: right;
 background-color: #ffffff;
 margin-top: 20px;
-width: 270px;
+width: 268px;
 border: 1px solid #dddddd;
 height: auto;
 text-align: center;
@@ -38,7 +38,7 @@ img.icons:hover {
 }
 
 .mainContent{
-    width: 650px;
+    width: 648px;
     margin: 30px;
     float:left;
     background-color: white;
