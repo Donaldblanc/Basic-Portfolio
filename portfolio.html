@@ -10,7 +10,6 @@
 
 <body>
 
-
     <div class="container">
         <!-- Wrapper -->
 
@@ -42,15 +41,15 @@
                 <div class="ptable">
                         <table>
                                 <tr>
-                                    <td><a href="#" target="_blank"><img src="https://placehold.it/200x200" alt="Hangman"><h4>Hangman</h4></a></td>
-                                    <td><a href="#" target="_blank"><img src="https://placehold.it/200x200"  alt="RPG Game"><h4>RPG Game</h4></a></td>
+                                    <td class="popup" onclick="portfolioPopup()"><a href="#"><img src="https://placehold.it/200x200" alt="Hangman"><h4>Hangman</h4><span class="popuptext" id="myPopup">Project Coming Soon!</span></a></td>
+                                    <td class="popup" onclick="portfolioPopup()"><a href="#" ><img src="https://placehold.it/200x200"  alt="RPG Game"><h4>RPG Game</h4></a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="#" target="_blank"><img src="https://placehold.it/200x200"  alt="Rutgers Info Widget"><h4>Rutgers Info Widget</h4></a></td>
-                                    <td><a href="#" target="_blank"><img src="https://placehold.it/200x200"  alt="Trivia Game"><h4>Trivia Game</h4></a></td>
+                                    <td class="popup" onclick="portfolioPopup()"><a href="#"><img src="https://placehold.it/200x200"  alt="Rutgers Info Widget"><h4>Rutgers Info Widget</h4></a></td>
+                                    <td class="popup" onclick="portfolioPopup()"><a href="#"><img src="https://placehold.it/200x200"  alt="Trivia Game"><h4>Trivia Game</h4></a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="#" target="_blank"><img src="https://placehold.it/200x200"  alt="Rock Paper Scissors"><h4>Rock Paper Scissors</h4></a></td> 
+                                    <td class="popup" onclick="portfolioPopup()"><a href="#"><img src="https://placehold.it/200x200"  alt="Rock Paper Scissors"><h4>Rock Paper Scissors</h4></a></td> 
                                     <td style="display:none;"><a href="#" target="_blank"><img src="https://placehold.it/200x200"  alt="Rock Paper Scissors"><h4>Place holder for Validation</h4></a></td> <!-- need this for proper html validation -->
                                 </tr>
                 
@@ -79,17 +78,20 @@
         <p>&#169; Copyright 2018 Donald Blanc</p>
     </div>
     <!-- End Footer Div -->
-     
-
 
     </div>
     <!-- End Wrapper -->
 
-
-
-
-
-
+    <script>
+        // When the user clicks on a project, open the popup
+        function portfolioPopup() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+            //adding timeout to hide the span
+            setTimeout( function() {
+                 popup.classList.toggle("show");
+                }, 5000 ); //timeout function to hide the popup again
+        }
+    </script>
 </body>
-
 </html>
